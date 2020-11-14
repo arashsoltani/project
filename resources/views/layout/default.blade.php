@@ -11,7 +11,7 @@ Renew Support: http://themeforest.net/item/metronic-responsive-admin-dashboard-t
 License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
  --}}
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" {{ Metronic::printAttrs('html') }} {{ Metronic::printClasses('html') }}>
+<html direction="rtl" dir="rtl" lang="{{ str_replace('_', '-', app()->getLocale()) }}" {{ Metronic::printAttrs('html') }} {{ Metronic::printClasses('html') }}>
     <head>
         <meta charset="utf-8"/>
 

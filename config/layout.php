@@ -5,7 +5,7 @@ return [
     // Self
     'self' => [
         'layout' => 'default', // blank, default
-        'rtl' => false, // true, false
+        'rtl' => true, // true, false
     ],
 
     // Base Layout
@@ -76,7 +76,7 @@ return [
     // Header
     'header' => [
         'self' => [
-            'display' => true,
+            'display' =>false,
             'width' => 'fluid', // fixed, fluid
             'theme' => 'light', // light, dark
             'fixed' => [
@@ -112,7 +112,7 @@ return [
 
     // Subheader
     'subheader' => [
-        'display' => true,
+        'display' => false,
         'displayDesc' => true,
         'layout' => 'subheader-v1',
         'fixed' => true,
@@ -176,7 +176,7 @@ return [
 
         // Search
         'search' => [
-            'display' => true,
+            'display' => false,
             'layout' => 'dropdown', // offcanvas, dropdown
             'offcanvas' => [
                 'direction' => 'right'
@@ -185,7 +185,7 @@ return [
 
         // Notifications
         'notifications' => [
-            'display' => true,
+            'display' => false,
             'layout' => 'dropdown', // offcanvas, dropdown
             'dropdown' => [
                 'style' => 'dark' // light|dark
@@ -197,7 +197,7 @@ return [
 
         // Quick Actions
         'quick-actions' => [
-            'display' => true,
+            'display' => false,
             'layout' => 'dropdown', // offcanvas, dropdown
             'dropdown' => [
                 'style' => 'dark' // light|dark
@@ -221,12 +221,12 @@ return [
 
         // Languages
         'languages' => [
-            'display' => true
+            'display' => false
         ],
 
         // Cart
         'cart' => [
-            'display' => true,
+            'display' => false,
             'dropdown' => [
                 'style' => 'dark' // light|dark
             ]
@@ -234,7 +234,7 @@ return [
 
         // Quick Panel
         'quick-panel' => [
-            'display' => true,
+            'display' => false,
             'offcanvas' => [
                 'direction' => 'right'
             ]
@@ -242,12 +242,12 @@ return [
 
         // Chat
         'chat' => [
-            'display' => true,
+            'display' => false,
         ],
 
         // Page Toolbar
         'toolbar' => [
-            'display' => true
+            'display' => false
         ],
 
         // Scrolltop
@@ -270,6 +270,8 @@ return [
             'plugins/global/plugins.bundle.css',
             'plugins/custom/prismjs/prismjs.bundle.css',
             'css/style.bundle.css',
+            'css/style.bundle.rtl.css',
+
         ],
         'js' => [
             'plugins/global/plugins.bundle.js',
