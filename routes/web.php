@@ -33,3 +33,5 @@ Route::get('/quick-search', 'PagesController@quickSearch')->name('quick-search')
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/admin', 'AdminController@index')->name('admin');
