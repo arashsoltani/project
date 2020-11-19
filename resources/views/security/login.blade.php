@@ -58,6 +58,16 @@
                 <div class="d-flex flex-column-fluid flex-column flex-center">
                     <!--begin::Signin-->
                     <div class="login-form login-signin py-11">
+                        @if ($errors->any())
+                            <div class="alert alert-danger">
+                                <ul>
+                                    @foreach ($errors->all() as $error)
+                                        <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+
+                    @endif
                         <!--begin::Form-->
                         <form class="form" method="POST" action="{{ route('login') }}" novalidate="novalidate"  id="kt_login_signin_form">
                             <!--begin::Title-->
@@ -70,8 +80,8 @@
 
                             <!--begin::Form group-->
                             <div class="form-group">
-                                <label class="font-size-h6 font-weight-bolder text-dark">پست الکترونیک</label>
-                                <input class="form-control form-control-solid h-auto py-7 px-6 rounded-lg" type="text" name="national_code" id="national_code" autocomplete="off"/>
+                                <label class="font-size-h6 font-weight-bolder text-dark">کد ملی</label>
+                                <input class="form-control form-control-solid h-auto py-7 px-6 rounded-lg" type="text" name="national_code" id="national_code" autocomplete="on"/>
                             </div>
                             <!--end::Form group-->
 

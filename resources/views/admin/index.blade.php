@@ -8,6 +8,6 @@
     <title>Document</title>
 </head>
 <body>
-<h4>AdminPage</h4>
+<h4>{{ Auth::user()->name }}</h4>
 </body>
 </html>

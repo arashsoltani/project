@@ -1,11 +1,13 @@
+
 <?php
 // Aside menu
+use Illuminate\Support\Facades\Auth;
 return [
 
     'items' => [
         // Dashboard
         [
-            'title' => 'میزکار',
+            'title' => 'میزکار' ,
             'root' => true,
             'icon' => 'media/svg/icons/Design/Layers.svg', // or can be 'flaticon-home' or any flaticon-*
             'page' => '/',
@@ -74,9 +76,13 @@ return [
 
 
         // CRUD
+        [
+
+        ],
 
 
     ]
+
 
 
 ];
